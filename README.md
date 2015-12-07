@@ -11,6 +11,8 @@ OpenStack Kuryr 源码分析
 感谢所有的 [贡献者](https://github.com/yeasy/openstack_code_Kuryr/graphs/contributors)。
 
 ## 更新历史:
+* V0.2: 2015-12-07
+	* 添加更多核心代码分析。
 * V0.1: 2015-11-02
 	* 初始化基本结构。
 
