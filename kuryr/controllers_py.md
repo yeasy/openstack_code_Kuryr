@@ -22,7 +22,10 @@
 
 绑定一个 Neutron 接口到一个容器的接口。
 
+### network_driver_leave
+响应 POST 到 /NetworkDriver.Leave。
 
+绑定一个 Neutron 接口到一个容器的接口。
 
 ### network_driver_delete_endpoint
 
@@ -36,7 +39,6 @@
 
 
 
-### network_driver_leave
 
 ### plugin_activate
 响应 POST 到 /Plugin.Activate，回复实现的驱动的类型列表。
