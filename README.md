@@ -1,6 +1,6 @@
 OpenStack Kuryr 源码分析
 ============
-[Kuryr](https://wiki.openstack.org/wiki/Kuryr) 是 OpenStack 项目中负责提供容器网络服务的项目，它可以连接 [libnetwork](https://github.com/docker/libnetwork) 支持的 CNM（Container Network Model） 和 Neutron 所提供的网络服务。
+[Kuryr](https://wiki.openstack.org/wiki/Kuryr) 是 OpenStack 项目中负责提供容器网络服务的项目，它作为 libnetwork 的一个 remote 类型的驱动，可以连接 [libnetwork](https://github.com/docker/libnetwork) 支持的 CNM（Container Network Model） 和 Neutron 所提供的网络服务。
 
 本书将剖析 Kuryr 组件的代码。
 
