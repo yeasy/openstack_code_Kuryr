@@ -32,7 +32,7 @@
 根据给定的 endpoint 来删除对应的 Neutron 子网和接口。
 
 ### network_driver_delete_network
-响应 POST 到 /NetworkDriver.DeleteEndpoint。
+响应 POST 到 /NetworkDriver.DeleteNetwork。
 
 根据给定的 endpoint 来删除对应的 Neutron 子网和接口。
 
