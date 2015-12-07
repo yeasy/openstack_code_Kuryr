@@ -6,6 +6,12 @@
 整个生命周期如下图所示。
 ![](../_images/cnm_lifecycle.png)
 
+### plugin_activate
+响应 POST 到 /Plugin.Activate，回复实现的驱动的类型列表。
+
+### plugin_scope
+响应 POST 到 /NetworkDriver.GetCapabilities，回复驱动的范围：local 或者 global。
+
 ### network_driver_create_network
 响应 POST 到 /NetworkDriver.CreateNetwork。
 
@@ -48,8 +54,3 @@
 
 
 
-### plugin_activate
-响应 POST 到 /Plugin.Activate，回复实现的驱动的类型列表。
-
-### plugin_scope
-响应 POST 到 /NetworkDriver.GetCapabilities，回复驱动的范围：local 或者 global。
