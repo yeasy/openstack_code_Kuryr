@@ -46,7 +46,7 @@ CNM 中定义的整个生命周期如下图所示。
 响应 POST 到 /NetworkDriver.DeleteNetwork。
 
 ### network_driver_discover_new
-响应 POST 到 /NetworkDriver.DeleteNetwork。
+响应 POST 到 /NetworkDriver.DiscoverNew。
 
 ### network_driver_endpoint_operational_info
 响应 POST 到 /NetworkDriver.EndpointOperInfo。
