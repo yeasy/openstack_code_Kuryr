@@ -11,7 +11,6 @@
 
 根据给定的 network 的 id 来创建一个新的 Neutron 网络。
 
-
 ### network_driver_create_endpoint
 响应 POST 到 /NetworkDriver.CreateEndpoint。
 
