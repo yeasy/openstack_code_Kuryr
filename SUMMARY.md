@@ -15,7 +15,7 @@
        * [Vagrantfile](contrib/vagrant/Vagrantfile.md)
 * [devstack](devstack/README.md)
    * [local.conf.sample](devstack/localconfsample_md.md)
-   * [plugin.sh](devstack/plugin_sh.md)
+   * [plugin.sh](devstack/pluginsh_md.md)
    * [settings](devstack/settings.md)
 * [doc](doc/README.md)
    * [source](doc/source/README.md)
