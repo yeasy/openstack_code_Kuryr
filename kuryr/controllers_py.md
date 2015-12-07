@@ -5,14 +5,25 @@
 
 
 ### network_driver_create_endpoint
+
 ### network_driver_create_network
+
 ### network_driver_delete_endpoint
+
 ### network_driver_delete_network
+
 ### network_driver_discover_delete
+
 ### network_driver_discover_new
+
 ### network_driver_endpoint_operational_info
+
 ### network_driver_join
+
 ### network_driver_leave
+
 ### plugin_activate
-响应 POST 到 /Plugin.Activate，回复
+响应 POST 到 /Plugin.Activate，回复实现的驱动的类型列表。
+
 ### plugin_scope
+响应 POST 到 /NetworkDriver.GetCapabilities，回复驱动的范围：local 或者 global。
