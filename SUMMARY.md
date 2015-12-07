@@ -16,7 +16,7 @@
 * [devstack](devstack/README.md)
    * [local.conf.sample](devstack/localconfsample_md.md)
    * [plugin.sh](devstack/pluginsh_md.md)
-   * [settings](devstack/settings.md)
+   * settings
 * [doc](doc/README.md)
    * [source](doc/source/README.md)
        * [devref](doc/source/devref/README.md)
