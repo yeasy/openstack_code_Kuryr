@@ -43,7 +43,9 @@ CNM 中定义的整个生命周期如下图所示。
 根据给定的 libnetwork 的 network id 作为名字来删除对应的 Neutron 网络。
 
 ### network_driver_discover_delete
-响应 POST 到 /NetworkDriver.DeleteNetwork。
+响应 POST 到 /NetworkDriver.DiscoverNew。
+
+docker 会发出探测消息，被 libnetwork 监听到后传递给后面的驱动。
 
 ### network_driver_discover_new
 响应 POST 到 /NetworkDriver.DiscoverNew。
