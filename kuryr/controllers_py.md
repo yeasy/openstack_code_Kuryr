@@ -14,4 +14,5 @@
 ### network_driver_join
 ### network_driver_leave
 ### plugin_activate
+响应 POST 到 /Plugin.Activate，回复
 ### plugin_scope
