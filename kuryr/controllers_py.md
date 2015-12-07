@@ -49,4 +49,4 @@
 响应 POST 到 /NetworkDriver.DeleteNetwork。
 
 ### network_driver_endpoint_operational_info
-响应 POST 到 /NetworkDriver.DeleteNetwork。
+响应 POST 到 /NetworkDriver.EndpointOperInfo。
