@@ -12,3 +12,5 @@
 ### network_driver_endpoint_operational_info
 ### network_driver_join
 ### network_driver_leave
+### plugin_activate
+### plugin_scope
