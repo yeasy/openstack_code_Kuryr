@@ -53,6 +53,7 @@
        * [test_kuryr_endpoint.py](kuryr/tests/test_kuryr_endpoint_py.md)
        * [test_kuryr_network.py](kuryr/tests/test_kuryr_network_py.md)
        * [test_utils.py](kuryr/tests/test_utils_py.md)
+   * [binding.py](kuryr/binding_py.md)
    * [controllers.py](kuryr/controllers_py.md)
    * [i18n.py](kuryr/i18n_py.md)
    * [opts.py](kuryr/opts_py.md)
