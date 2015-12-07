@@ -28,6 +28,9 @@
 解除绑定一个 Neutron 接口到一个容器的接口。
 
 ### network_driver_delete_endpoint
+响应 POST 到 /NetworkDriver.DeleteEndpoint。
+
+根据给定的 endpoint 来创建一个新的 Neutron 子网和接口。
 
 ### network_driver_delete_network
 
