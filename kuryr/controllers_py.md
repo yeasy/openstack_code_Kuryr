@@ -1,9 +1,9 @@
 ## controllers.py
-作为 libnetwork 的一个 remote 类型驱动的代理，定义响应 rest 请求的一系列入口函数。按照 [https://github.com/docker/libnetwork/blob/master/docs/remote.md](https://github.com/docker/libnetwork/blob/master/docs/remote.md) 中定义的请求和响应消息来实现。
+作为 libnetwork 的一个 remote 类型驱动的代理（基于 flask 框架），定义响应 rest 请求的一系列入口函数。按照 [https://github.com/docker/libnetwork/blob/master/docs/remote.md](https://github.com/docker/libnetwork/blob/master/docs/remote.md) 中定义的请求和响应消息来实现。
 
 主要包括：network_driver_create_endpoint、network_driver_create_network、network_driver_delete_endpoint、network_driver_delete_network、network_driver_discover_delete、network_driver_discover_new、network_driver_endpoint_operational_info、network_driver_join、network_driver_leave、plugin_activate、plugin_scope等。
 
-整个生命周期如下图所示。
+CNM 中定义的整个生命周期如下图所示。
 ![](../_images/cnm_lifecycle.png)
 
 ### plugin_activate
