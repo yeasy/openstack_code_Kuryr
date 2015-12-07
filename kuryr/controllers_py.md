@@ -6,6 +6,12 @@
 CNM 中定义的整个生命周期如下图所示。
 ![](../_images/cnm_lifecycle.png)
 
+
+### network_driver_discover_new
+响应 POST 到 /NetworkDriver.DiscoverNew。
+
+docker 会发出探测消息，被 libnetwork 监听到后传递给后面的驱动。
+
 ### plugin_activate
 响应 POST 到 /Plugin.Activate，回复实现的驱动的类型列表。
 
@@ -47,10 +53,6 @@ CNM 中定义的整个生命周期如下图所示。
 
 docker 会发出探测消息，被 libnetwork 监听到后传递给后面的驱动。
 
-### network_driver_discover_new
-响应 POST 到 /NetworkDriver.DiscoverNew。
-
-docker 会发出探测消息，被 libnetwork 监听到后传递给后面的驱动。
 
 ### network_driver_endpoint_operational_info
 响应 POST 到 /NetworkDriver.EndpointOperInfo。
