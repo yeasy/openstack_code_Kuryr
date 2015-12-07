@@ -41,5 +41,6 @@ find kuryr  -name "*.py" | xargs cat | wc -l
 一些外部的库支持，目前包括调用 midonet 的命令等。
 
 ## 其它文档
+* setup.py：项目的 python 库依赖
 * README.rst：介绍了项目的情况和一些有用连接。
 * TESTING.rst：介绍如何进行开发后的测试。官方配置的 jenkins 当 gerrit 上有代码提交 review 的时候会触发 tox 测试。实际上，OpenStack 中的项目基本都使用 [tox](http://tox.readthedocs.org/en/latest/) 来管理测试的虚拟环境，使用 [testr](https://wiki.openstack.org/wiki/Testr) 来管理运行测试案例的顺序。
