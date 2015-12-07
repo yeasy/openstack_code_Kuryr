@@ -37,10 +37,13 @@
 根据给定的 libnetwork 的 network id 作为名字来删除对应的 Neutron 网络。
 
 ### network_driver_discover_delete
+响应 POST 到 /NetworkDriver.DeleteNetwork。
 
 ### network_driver_discover_new
+响应 POST 到 /NetworkDriver.DeleteNetwork。
 
 ### network_driver_endpoint_operational_info
+响应 POST 到 /NetworkDriver.DeleteNetwork。
 
 
 
