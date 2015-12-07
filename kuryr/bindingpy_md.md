@@ -9,6 +9,6 @@ port_bind(endpoint_id, neutron_port, neutron_subnets)
 
 将给定的 neutron 端口绑定到本地的一个容器上。
 
-主要使用pyroute2 包来实现 veth 端口对的连接。
+主要使用 pyroute2 包来实现 veth 端口对的连接和信息配置。
 
 ### port_unbind
