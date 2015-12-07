@@ -3,6 +3,9 @@
 
 主要包括：network_driver_create_endpoint、network_driver_create_network、network_driver_delete_endpoint、network_driver_delete_network、network_driver_discover_delete、network_driver_discover_new、network_driver_endpoint_operational_info、network_driver_join、network_driver_leave、plugin_activate、plugin_scope等。
 
+整个生命周期如下图所示。
+
+
 ### network_driver_create_network
 响应 POST 到 /NetworkDriver.CreateNetwork，根据给定的 network 的 id 来创建一个新的 Neutron 网络。
 
@@ -10,7 +13,7 @@
 ### network_driver_create_endpoint
 响应 POST 到 /NetworkDriver.CreateEndpoint，根据给定的 endpoint 来创建一个新的 Neutron 子网和接口。
 
-
+### network_driver_join
 
 
 ### network_driver_delete_endpoint
@@ -23,7 +26,7 @@
 
 ### network_driver_endpoint_operational_info
 
-### network_driver_join
+
 
 ### network_driver_leave
 
