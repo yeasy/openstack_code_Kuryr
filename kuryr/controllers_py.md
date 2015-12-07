@@ -50,3 +50,5 @@
 
 ### network_driver_endpoint_operational_info
 响应 POST 到 /NetworkDriver.EndpointOperInfo。
+
+回复某个 endpoint 上的可操作信息。
