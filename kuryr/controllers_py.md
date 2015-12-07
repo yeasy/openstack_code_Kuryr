@@ -5,6 +5,8 @@
 
 
 ### network_driver_create_endpoint
+响应 POST 到 /NetworkDriver.CreateEndpoint，根据给定的 endpoint 来创建一个新的 Neutron 子网和接口。
+
 
 ### network_driver_create_network
 
