@@ -34,7 +34,7 @@
 ### network_driver_delete_network
 响应 POST 到 /NetworkDriver.DeleteNetwork。
 
-根据给定的 endpoint 来删除对应的 Neutron 子网和接口。
+根据给定的 libnetwork 的 network id 作为名字来删除对应的 Neutron 网络。
 
 ### network_driver_discover_delete
 
