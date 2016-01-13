@@ -8,19 +8,44 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "trusty"
+  VM_MEMORY    = ENV.fetch('VAGRANT_KURYR_VM_MEMORY', 4096)
+  VM_CPUS      = ENV.fetch('VAGRANT_KURYR_VM_CPUS', 2)
+  RUN_DEVSTACK = ENV.fetch('VAGRANT_KURYR_RUN_DEVSTACK', 'true')
 
-  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.hostname = 'devstack'
 
-  config.vm.hostname = "devstack"
-
-  config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id, "--memory", "4096"]
+  config.vm.provider 'virtualbox' do |v, override|
+    override.vm.box = ENV.fetch('VAGRANT_KURYR_VM_BOX', 'trusty')
+    v.memory        = VM_MEMORY
+    v.cpus          = VM_CPUS
   end
 
-  config.vm.provision :shell, :path => "vagrant.sh"
+  config.vm.provider 'parallels' do |v, override|
+    override.vm.box = ENV.fetch('VAGRANT_KURYR_VM_BOX', 'boxcutter/ubuntu1404')
+    v.memory        = VM_MEMORY
+    v.cpus          = VM_CPUS
+    v.customize ['set', :id, '--nested-virt', 'on']
+  end
 
-  if Vagrant.has_plugin?("vagrant-cachier")
+  config.vm.provider 'libvirt' do |v, override|
+    override.vm.box = ENV.fetch('VAGRANT_KURYR_VM_BOX', 'celebdor/trusty64')
+    v.memory        = VM_MEMORY
+    v.cpus          = VM_CPUS
+    v.nested        = true
+    v.graphics_type = 'spice'
+    v.video_type    = 'qxl'
+  end
+
+  config.vm.synced_folder '../../devstack/', '/devstack'
+  # For CentOS machines it needs to be specified
+  config.vm.synced_folder '.', '/vagrant'
+
+  config.vm.provision :shell do |s|
+    s.path = 'vagrant.sh'
+    s.args = RUN_DEVSTACK
+  end
+
+  if Vagrant.has_plugin?('vagrant-cachier')
     config.cache.scope = :box
   end
 
